@@ -9,6 +9,10 @@ const productSchema = new mongoose.Schema({
   },
   quantity: { type: Number, required: [true, "Please enter product quantity"] },
   imgSrc: { type: String, required: [true, "Please enter product image"] },
+  downloadLink: {
+    type: String,
+    required: [true, "Please enter download Link"],
+  },
 });
 
 const ProductModel = mongoose.model("product", productSchema);
