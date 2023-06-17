@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:4200", "http://localhost:3000"],
+    origin: ["https://book-shop-iota.vercel.app"و"http://localhost:4200", "http://localhost:3000"],
   })
 );
 
